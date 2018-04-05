@@ -1,3 +1,15 @@
-body {
-    background-color: red;
-}
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/composition.scss";
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/navigation";
+
+@import "pages/home";

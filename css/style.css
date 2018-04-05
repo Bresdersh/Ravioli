@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-image: linear-gradient(to right bottom, #00B9F7, #041531);
+  color: #777777; }
