@@ -1,0 +1,9 @@
+// Container 
+.container {
+    @include shadow;
+    margin: 8rem auto;
+    max-width: 120rem;
+    background-color: $color-grey-light;
+
+    min-height: 50rem;
+}

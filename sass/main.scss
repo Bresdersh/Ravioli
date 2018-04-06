@@ -6,10 +6,13 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/composition.scss";
+@import "components/button";
+@import "components/composition";
 
+@import "layout/container";
 @import "layout/footer";
 @import "layout/header";
+@import "layout/main-view";
 @import "layout/navigation";
 
 @import "pages/home";

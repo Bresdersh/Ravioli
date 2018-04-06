@@ -18,3 +18,41 @@ body {
   line-height: 1.6;
   background-image: linear-gradient(to right bottom, #00B9F7, #041531);
   color: #777777; }
+
+.container {
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  margin: 8rem auto;
+  max-width: 120rem;
+  background-color: #F4F2F2;
+  min-height: 50rem; }
+
+.page-header {
+  height: 7rem;
+  border-bottom: #777777;
+  background-color: #FFFFFF; }
+
+.logo {
+  height: 3.25rem; }
+
+.search__icon {
+  height: 2rem;
+  width: 2rem; }
+
+.main-view {
+  background-color: orangered;
+  flex: 1; }
+
+.user-nav__icon {
+  height: 2.25rem;
+  width: 2.25rem; }
+
+.user-nav__user-photo {
+  height: 3.75rem;
+  border-radius: 50%; }
+
+.sidebar {
+  display: flex; }
+
+.menu {
+  background-color: #333333;
+  flex: 0 0 18%; }

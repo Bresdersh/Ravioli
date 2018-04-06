@@ -1,0 +1,36 @@
+// User-navigation
+.user-nav {
+
+    &__icon-box {
+
+    }
+
+    &__icon {
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+
+    &__circle {
+        
+    }
+
+    &__user-photo {
+        height: 3.75rem;
+        border-radius: 50%;
+    }
+
+    &__user-name {
+        
+    }
+}
+
+// Navigation
+.sidebar {
+    display: flex;
+}
+
+.menu {
+    background-color: $color-grey-dark-1;
+
+    flex: 0 0 18%;
+}
