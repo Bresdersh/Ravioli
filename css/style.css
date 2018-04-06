@@ -16,15 +16,21 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  background-image: linear-gradient(to right bottom, #00B9F7, #041531);
+  background-color: #2ECC71;
   color: #777777; }
+
+.copyright {
+  padding: 2.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #CCCCCC; }
 
 .container {
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   margin: 8rem auto;
   max-width: 120rem;
-  background-color: #F4F2F2;
-  min-height: 50rem; }
+  min-height: 50rem;
+  background-color: #F4F2F2; }
 
 .page-header {
   height: 7rem;
@@ -76,7 +82,50 @@ body {
     width: 2rem;
     fill: #333333; }
 
+.menu-nav {
+  margin-top: 3.5rem;
+  font-size: 1.4rem;
+  list-style: none; }
+  .menu-nav__item {
+    position: relative; }
+    .menu-nav__item:not(:last-child) {
+      margin-bottom: .5rem; }
+  .menu-nav__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: .2rem;
+    background-color: #179E83;
+    transform: scaleY(0);
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
+    border-radius: 1%; }
+  .menu-nav__item:hover::before, .menu-nav__item--active::before {
+    transform: scaleY(1);
+    width: 100%; }
+  .menu-nav__item:active::before {
+    background-color: #00B9F7;
+    transition: all .9s; }
+  .menu-nav__link:link, .menu-nav__link:visited {
+    display: block;
+    padding: 1.5rem 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center; }
+  .menu-nav__icon {
+    margin-right: 2rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: currentColor; }
+
 .main-view {
+  height: 80rem;
   background-color: orangered;
   flex: 1; }
 
@@ -121,4 +170,7 @@ body {
 
 .menu {
   background-color: #333333;
-  flex: 0 0 18%; }
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
