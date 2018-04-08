@@ -38,6 +38,12 @@ body {
   min-height: 50rem;
   background-color: #F4F2F2; }
 
+.paragraph {
+  text-align: justify; }
+
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem; }
+
 .btn-order {
   cursor: pointer;
   display: inline-block;
@@ -96,7 +102,8 @@ body {
       height: 4rem;
       width: 3rem;
       color: transparent; }
-      .prospect__stars label:hover::before {
+      .prospect__stars label:hover::before,
+      .prospect__stars label:hover ~ label::before {
         color: #794044; }
       .prospect__stars label::before {
         content: "☆";
@@ -132,9 +139,9 @@ body {
     text-transform: uppercase; }
 
 .page-header {
+  border-bottom: 0.1rem solid #D3D3D3;
   height: 7rem;
   font-size: 1.4rem;
-  border-bottom: 0.1rem solid #D3D3D3;
   background-color: #FFFFFF;
   display: flex;
   justify-content: space-between;
@@ -224,8 +231,64 @@ body {
     fill: currentColor; }
 
 .main-view {
-  height: 80rem;
+  flex: 1;
+  background-color: #FFFFFF; }
+
+.detail {
+  border-bottom: 0.1rem solid #D3D3D3;
+  padding: 4.5rem;
+  background-color: #F0EEEE;
+  display: flex; }
+
+.description {
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  padding: 3rem;
+  margin-right: 4.5rem;
+  font-size: 1.4rem;
+  background-color: #FFFFFF;
+  flex: 0 0 60%; }
+
+.user-reviews {
+  background-color: yellowgreen;
   flex: 1; }
+
+.list {
+  border-top: 0.1rem solid #D3D3D3;
+  border-bottom: 0.1rem solid #D3D3D3;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; }
+  .list__item {
+    margin-bottom: .7rem;
+    flex: 0 0 50%; }
+  .list__item::before {
+    content: "";
+    display: inline-block;
+    margin-right: .7rem;
+    height: 1.1rem;
+    width: 1.1rem;
+    background-color: #EB2F64;
+    -webkit-mask-image: url(../img/chevron-thin-right.svg);
+    -webkit-mask-size: cover;
+    mask-image: url(../img/chevron-thin-right.svg);
+    mask-size: cover; }
+
+.recommend {
+  font-size: 1.3rem;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .recommend__photo {
+    height: 4rem;
+    width: 4rem;
+    border: 0.3rem solid #FFFFFF;
+    border-radius: 50%;
+    box-sizing: content-box; }
+    .recommend__photo:not(:last-child) {
+      margin-right: -2.6rem; }
 
 .user-nav {
   display: flex;

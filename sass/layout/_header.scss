@@ -1,8 +1,8 @@
 // Header
 .page-header {
+    @include border-bottom;
     height: 7rem;
     font-size: 1.4rem;
-    border-bottom: .1rem solid $color-grey-light-1;
     background-color: $color-white;
 
     display: flex;
