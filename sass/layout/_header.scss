@@ -2,7 +2,7 @@
 .page-header {
     height: 7rem;
     font-size: 1.4rem;
-    border-bottom: $color-grey-dark;
+    border-bottom: .1rem solid $color-grey-light-1;
     background-color: $color-white;
 
     display: flex;
@@ -102,12 +102,12 @@
     
     &__item:hover::before,
     &__item--active::before {
-        transform: scaleY(1);
         width: 100%;
+        transform: scaleY(1);
     }
 
     &__item:active::before {
-        background-color: $color-light-blue;
+        background-color: $color-blue-light;
         transition: all .9s;
     }
 

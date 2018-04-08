@@ -137,7 +137,99 @@
 
                 <!-- Main -->
                 <main class="main-view">
-                    Main-view
+
+                    <!-- Gallery -->
+                    <div class="gallery">
+                        <figure class="gallery__item">
+                            <img src="img/meal-1.jpg" 
+                                 alt="A meal in the form of a salad and pizza" 
+                                 class="gallery__photo">    
+                        </figure>
+
+                        <figure class="gallery__item">
+                            <img src="img/meal-2.jpg" 
+                                 alt="Meal in the form of a chicken roast" 
+                                 class="gallery__photo">
+                        </figure>
+
+                        <figure class="gallery__item">
+                            <img src="img/meal-3.jpg" 
+                                 alt="Pizza with various toppings" 
+                                 class="gallery__photo">
+                        </figure>
+                    </div>
+
+                    <!-- Prospect -->
+                    <div class="prospect">
+                        <h1 class="prospect__heading">
+                            Ravioli - Italian cuisine
+                        </h1>
+
+                        <!-- Stars -->
+                        <div class="prospect__stars">
+                            <label for="star5">
+                                Five Stars
+                            </label>
+                            <input type="radio" 
+                                   id="star5" 
+                                   name="star" 
+                                   value="5">
+                            
+                            <label for="star4">
+                                Four Stars
+                            </label>
+                            <input type="radio" 
+                                    id="star4" 
+                                    name="star" 
+                                    value="4">
+                                   
+                            <label for="star3">
+                                Three Stars
+                            </label>
+                            <input type="radio" 
+                                    id="star3" 
+                                    name="star" 
+                                    value="3">
+
+                            <label for="star2">
+                                Two Stars
+                            </label>
+                            <input type="radio" 
+                                    id="star2" 
+                                    name="star" 
+                                    value="2">
+
+                            <label for="star1">
+                                One Stars
+                            </label>
+                            <input type="radio"
+                                   id="star1" 
+                                   name="star" 
+                                   value="1">
+                        </div>
+
+                        <!-- Prospect -->
+                        <div class="prospect__location">
+                            <svg class="prospect__icon-order">
+                                <use xlink:href="img/sprite.svg#icon-shopping-cart">
+                                    &nbsp;
+                                </use>
+                            </svg>
+                            <button class="btn-order">
+                                Place your order
+                            </button>
+                        </div>
+                        
+                        <div class="prospect__rating">
+                            <div class="prospect__rating-average">
+                                8.4
+                            </div>
+                            <div class="prospect__rating-count">
+                                298 votes
+                            </div>
+                        </div>
+                    </div>
+
                 </main>
             </div>
 
