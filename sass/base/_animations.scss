@@ -1,8 +1,8 @@
 // Pulsate
 @keyframes pulsate {
     0% {
-        transform: scale(1);
         box-shadow: none;
+        transform: scale(1);
     }
 
     50% {
@@ -11,7 +11,7 @@
     }
 
     100% {
-        transform: scale(1);
         box-shadow: none;
+        transform: scale(1);
     }
 }

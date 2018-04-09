@@ -2,6 +2,7 @@
 .detail {
     @include border-bottom;
     padding: 4.5rem;
+    font-size: 1.4rem;
     background-color: $color-grey-light-2;
 
     display: flex;
@@ -16,13 +17,6 @@
     background-color: $color-white;
 
     flex: 0 0 60%;
-}
-
-// User-reviews
-.user-reviews {
-    background-color: yellowgreen;
-
-    flex: 1;
 }
 
 // List
@@ -62,20 +56,11 @@
 
 // Recommend
 .recommend {
-    font-size: 1.3rem;
-    color: $color-grey-dark-1;
+    color: $color-grey-dark;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    &__count {
-        
-    }
-
-    &__friends {
-
-    }
 
     &__photo {
         height: 4rem;

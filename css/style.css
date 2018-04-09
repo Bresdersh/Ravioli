@@ -1,14 +1,14 @@
 @charset "UTF-8";
 @keyframes pulsate {
   0% {
-    transform: scale(1);
-    box-shadow: none; }
+    box-shadow: none;
+    transform: scale(1); }
   50% {
     box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
     transform: scale(1.05); }
   100% {
-    transform: scale(1);
-    box-shadow: none; } }
+    box-shadow: none;
+    transform: scale(1); } }
 
 * {
   margin: 0;
@@ -46,17 +46,48 @@ body {
   background-color: transparent;
   color: #EB2F64;
   transition: all .2s; }
+  .btn-order span {
+    transition: margin-left .2s; }
   .btn-order:hover {
     color: #777777; }
+    .btn-order:hover span {
+      margin-left: .8rem; }
   .btn-order:focus {
     outline: none;
     animation: pulsate 1s infinite; }
 
-.copyright {
-  padding: 2.5rem;
-  font-size: 1.2rem;
-  text-align: center;
-  color: #CCCCCC; }
+.btn {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+  background-image: linear-gradient(to right, #2ECC71, #179E83);
+  color: #FFFFFF;
+  overflow: hidden;
+  position: relative; }
+  .btn > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all .2s; }
+  .btn__visible {
+    padding: 2rem 7.5rem; }
+  .btn__invisible {
+    padding: 2rem 0;
+    position: absolute;
+    top: -100%;
+    left: 0; }
+  .btn:hover {
+    background-image: linear-gradient(to left, #2ECC71, #179E83); }
+  .btn:hover .btn__visible {
+    transform: translateY(100%); }
+  .btn:hover .btn__invisible {
+    top: 0; }
+  .btn:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
 
 .gallery {
   display: flex; }
@@ -95,7 +126,7 @@ body {
       width: 3rem;
       color: transparent; }
       .prospect__stars label:hover::before,
-      .prospect__stars label:hover ~ ::before {
+      .prospect__stars label:hover ~ label::before {
         color: #794044; }
       .prospect__stars label::before {
         content: "☆";
@@ -130,6 +161,65 @@ body {
     font-size: .8rem;
     text-transform: uppercase; }
 
+.user-reviews {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.review {
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  position: relative; }
+  .review__text {
+    margin-bottom: 2rem;
+    z-index: 10;
+    position: relative; }
+  .review__user {
+    display: flex;
+    align-items: center; }
+  .review__photo {
+    margin-right: 1.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%; }
+  .review__user-box {
+    margin-right: auto; }
+  .review__user-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: .4rem; }
+  .review__user-date {
+    font-size: 1rem;
+    color: #777777; }
+  .review__rating {
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: #EB2F64; }
+  .review::before {
+    content: "\201C";
+    position: absolute;
+    top: -2.75rem;
+    left: -1rem;
+    line-height: 1;
+    font-family: sans-serif;
+    font-size: 20rem;
+    color: #F4F2F2;
+    z-index: 1; }
+
+.action {
+  padding: 3.5rem 0;
+  text-align: center; }
+  .action__subscribe {
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase; }
+
 .page-header {
   border-bottom: 0.1rem solid #D3D3D3;
   height: 7rem;
@@ -141,7 +231,8 @@ body {
 
 .logo {
   margin-left: 2rem;
-  height: 3.5rem; }
+  height: 5rem;
+  width: 5.5rem; }
 
 .search {
   flex: 0 0 40%;
@@ -183,6 +274,7 @@ body {
 .detail {
   border-bottom: 0.1rem solid #D3D3D3;
   padding: 4.5rem;
+  font-size: 1.4rem;
   background-color: #F0EEEE;
   display: flex; }
 
@@ -193,10 +285,6 @@ body {
   font-size: 1.4rem;
   background-color: #FFFFFF;
   flex: 0 0 60%; }
-
-.user-reviews {
-  background-color: yellowgreen;
-  flex: 1; }
 
 .list {
   border-top: 0.1rem solid #D3D3D3;
@@ -222,8 +310,7 @@ body {
     mask-size: cover; }
 
 .recommend {
-  font-size: 1.3rem;
-  color: #333333;
+  color: #777777;
   display: flex;
   align-items: center;
   justify-content: space-between; }
@@ -323,6 +410,12 @@ body {
     height: 1.75rem;
     width: 1.75rem;
     fill: currentColor; }
+
+.copyright {
+  padding: 2.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #CCCCCC; }
 
 .container {
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
