@@ -22,6 +22,9 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   min-height: 100vh;
@@ -107,11 +110,15 @@ body {
     font-weight: 300;
     letter-spacing: .1rem;
     text-transform: uppercase; }
+    @media only screen and (max-width: 37.5em) {
+      .prospect__heading {
+        padding: 1.25rem 2rem;
+        font-size: 1.8rem; } }
   .prospect__stars {
     margin-right: auto;
     padding: 1rem;
     height: 3rem;
-    width: 16rem;
+    width: 12rem;
     border-radius: 1.5rem;
     display: flex;
     justify-content: center;
@@ -122,7 +129,7 @@ body {
       left: -999rem; }
     .prospect__stars label {
       padding: .5rem;
-      height: 4rem;
+      height: 5rem;
       width: 3rem;
       color: transparent; }
       .prospect__stars label:hover::before,
@@ -153,13 +160,22 @@ body {
     align-items: center;
     justify-content: center;
     align-self: stretch; }
+    @media only screen and (max-width: 37.5em) {
+      .prospect__rating {
+        padding: 0 1.5rem; } }
   .prospect__rating-average {
     margin-bottom: -.1rem;
     font-size: 2.25rem;
     font-weight: 300; }
+    @media only screen and (max-width: 37.5em) {
+      .prospect__rating-average {
+        font-size: 1.8rem; } }
   .prospect__rating-count {
     font-size: .8rem;
     text-transform: uppercase; }
+    @media only screen and (max-width: 37.5em) {
+      .prospect__rating-count {
+        font-size: .5rem; } }
 
 .user-reviews {
   flex: 1;
@@ -174,6 +190,10 @@ body {
   overflow: hidden;
   background-color: #FFFFFF;
   position: relative; }
+  @media only screen and (max-width: 75em) {
+    .review {
+      padding: 2rem;
+      margin-bottom: 3rem; } }
   .review__text {
     margin-bottom: 2rem;
     z-index: 10;
@@ -214,6 +234,9 @@ body {
 .action {
   padding: 3.5rem 0;
   text-align: center; }
+  @media only screen and (max-width: 75em) {
+    .action {
+      padding: 2.5rem 0; } }
   .action__subscribe {
     margin-bottom: 2.5rem;
     font-size: 2rem;
@@ -228,6 +251,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 31.25em) {
+    .page-header {
+      height: 12rem;
+      flex-wrap: wrap;
+      align-content: space-around; } }
 
 .logo {
   margin-left: 2rem;
@@ -239,6 +267,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 31.25em) {
+    .search {
+      background-color: #F4F2F2;
+      order: 1;
+      flex: 0 0 100%; } }
   .search__input {
     margin-right: -3.25rem;
     padding: .7rem 2rem;
@@ -277,6 +310,12 @@ body {
   font-size: 1.4rem;
   background-color: #F0EEEE;
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .detail {
+      padding: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .detail {
+      flex-direction: column; } }
 
 .description {
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
@@ -285,6 +324,14 @@ body {
   font-size: 1.4rem;
   background-color: #FFFFFF;
   flex: 0 0 60%; }
+  @media only screen and (max-width: 56.25em) {
+    .description {
+      padding: 2rem;
+      margin-right: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .description {
+      margin-right: 0;
+      margin-bottom: 3rem; } }
 
 .list {
   border-top: 0.1rem solid #D3D3D3;
@@ -314,6 +361,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  .recommend__count {
+    margin: 0 auto; }
+  .recommend__friends {
+    display: flex; }
   .recommend__photo {
     height: 4rem;
     width: 4rem;
@@ -321,7 +372,7 @@ body {
     border-radius: 50%;
     box-sizing: content-box; }
     .recommend__photo:not(:last-child) {
-      margin-right: -2.6rem; }
+      margin-right: -2rem; }
 
 .user-nav {
   display: flex;
@@ -361,6 +412,9 @@ body {
 
 .sidebar {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .sidebar {
+      flex-direction: column; } }
 
 .menu {
   background-color: #333333;
@@ -373,10 +427,20 @@ body {
   margin-top: 3.5rem;
   font-size: 1.4rem;
   list-style: none; }
+  @media only screen and (max-width: 56.25em) {
+    .menu-nav {
+      margin: 0;
+      display: flex; } }
   .menu-nav__item {
     position: relative; }
     .menu-nav__item:not(:last-child) {
       margin-bottom: .5rem; }
+      @media only screen and (max-width: 56.25em) {
+        .menu-nav__item:not(:last-child) {
+          margin: 0; } }
+    @media only screen and (max-width: 56.25em) {
+      .menu-nav__item {
+        flex: 1; } }
   .menu-nav__item::before {
     content: "";
     position: absolute;
@@ -405,17 +469,34 @@ body {
     z-index: 10;
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 56.25em) {
+      .menu-nav__link:link, .menu-nav__link:visited {
+        padding: 2rem;
+        justify-content: center; } }
+    @media only screen and (max-width: 37.5em) {
+      .menu-nav__link:link, .menu-nav__link:visited {
+        padding: 1.5 .5rem;
+        flex-direction: column; } }
   .menu-nav__icon {
     margin-right: 2rem;
     height: 1.75rem;
     width: 1.75rem;
     fill: currentColor; }
+    @media only screen and (max-width: 37.5em) {
+      .menu-nav__icon {
+        margin-right: 0;
+        margin-bottom: .7rem;
+        height: 1.5rem;
+        width: 1.5rem; } }
 
 .copyright {
   padding: 2.5rem;
   font-size: 1.2rem;
   text-align: center;
   color: #CCCCCC; }
+  @media only screen and (max-width: 56.25em) {
+    .copyright {
+      display: none; } }
 
 .container {
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
@@ -423,6 +504,11 @@ body {
   max-width: 120rem;
   min-height: 50rem;
   background-color: #F4F2F2; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0;
+      max-width: 100%;
+      width: 100%; } }
 
 .main-view {
   flex: 1;

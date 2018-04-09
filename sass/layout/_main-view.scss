@@ -6,6 +6,14 @@
     background-color: $color-grey-light-2;
 
     display: flex;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+        padding: 3rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+        flex-direction: column;
+    }
 }
 
 // Description
@@ -17,6 +25,16 @@
     background-color: $color-white;
 
     flex: 0 0 60%;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+        padding: 2rem;
+        margin-right: 3rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
 }
 
 // List
@@ -62,6 +80,14 @@
     align-items: center;
     justify-content: space-between;
 
+    &__count {
+        margin: 0 auto;
+    }
+
+    &__friends {
+        display: flex;
+    }
+
     &__photo {
         height: 4rem;
         width: 4rem;
@@ -71,7 +97,7 @@
         box-sizing: content-box;
 
         &:not(:last-child) {
-            margin-right: -2.6rem;
+            margin-right: -2rem;
         }
     }
 }

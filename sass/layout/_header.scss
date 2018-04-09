@@ -8,6 +8,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: $breakpoint-smallest) {
+        height: 12rem;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
 }
 
 // Logo
@@ -23,6 +29,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media only screen and (max-width: $breakpoint-smallest) {
+        background-color: $color-grey-light;
+
+        order: 1;
+        flex: 0 0 100%;
+    }
 
     &__input {
         margin-right: -3.25rem;

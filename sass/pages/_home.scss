@@ -5,6 +5,12 @@
     max-width: 120rem;
     min-height: 50rem;
     background-color: $color-grey-light;
+
+    @media only screen and (max-width: $breakpoint-largest) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 // Main-view
