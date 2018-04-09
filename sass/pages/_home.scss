@@ -1,0 +1,15 @@
+// Container 
+.container {
+    @include shadow;
+    margin: 8rem auto;
+    max-width: 120rem;
+    min-height: 50rem;
+    background-color: $color-grey-light;
+}
+
+// Main-view
+.main-view {
+    flex: 1;
+
+    background-color: $color-white;
+}

@@ -1,8 +1,9 @@
 // Paragraph
 .paragraph {
     text-align: justify;
+
+    &:not(:last-of-type) {
+        margin-bottom: 2rem;
+    }
 }
 
-.paragraph:not(:last-of-type) {
-    margin-bottom: 2rem;
-}

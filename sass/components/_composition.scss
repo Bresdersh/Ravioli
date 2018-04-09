@@ -62,7 +62,7 @@
             color: transparent;
 
             &:hover::before,
-            &:hover ~ label::before  {
+            &:hover ~ ::before  {
                 color: $color-burgundy;
             }
 
