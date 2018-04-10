@@ -19,16 +19,16 @@
 // Description
 .description {
     @include second-shadow;
-    padding: 3rem;
     margin-right: 4.5rem;
+    padding: 3rem;
     font-size: 1.4rem;
     background-color: $color-white;
 
     flex: 0 0 60%;
 
     @media only screen and (max-width: $breakpoint-medium) {
-        padding: 2rem;
         margin-right: 3rem;
+        padding: 2rem;
     }
 
     @media only screen and (max-width: $breakpoint-small) {

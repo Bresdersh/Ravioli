@@ -11,6 +11,7 @@
 
     @media only screen and (max-width: $breakpoint-smallest) {
         height: 12rem;
+        
         flex-wrap: wrap;
         align-content: space-around;
     }
@@ -84,4 +85,3 @@
         fill: $color-grey-dark-1;
     }
 }
-

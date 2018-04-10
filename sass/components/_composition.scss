@@ -33,6 +33,10 @@
             padding: 1.25rem 2rem;
             font-size: 1.8rem;
         }
+
+        @media only screen and (max-width: $breakpoint-smallest) {
+            margin-left: -1.4rem;
+        }
     }
 
     &__stars {
@@ -49,7 +53,8 @@
 
         @media only screen and (max-width: $breakpoint-smallest) {
             margin-bottom: -1rem;
-            margin-left: .4rem;
+            margin-left: -.6rem;
+            font-size: .2rem;
         }
 
         input {
@@ -153,7 +158,6 @@
     margin-bottom: 3.5rem;
     overflow: hidden;
     background-color: $color-white;
-
     position: relative;
 
     @media only screen and (max-width: $breakpoint-largest) {
@@ -184,10 +188,10 @@
     }
 
     &__user-name {
+        margin-bottom: .4rem;
         font-size: 1.1rem;
         font-weight: 600;
         text-transform: uppercase;
-        margin-bottom: .4rem;
     }
 
     &__user-date {
@@ -230,6 +234,3 @@
         text-transform: uppercase;
     }
 }
-
-
-
