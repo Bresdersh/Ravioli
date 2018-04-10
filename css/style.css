@@ -124,6 +124,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row-reverse; }
+    @media only screen and (max-width: 31.25em) {
+      .prospect__stars {
+        margin-bottom: -1rem;
+        margin-left: .4rem; } }
     .prospect__stars input {
       position: absolute;
       left: -999rem; }
@@ -141,6 +145,14 @@ body {
         font-size: 3rem;
         line-height: 3rem;
         color: #000000; }
+        @media only screen and (max-width: 37.5em) {
+          .prospect__stars label::before {
+            font-size: 2.6rem; } }
+        @media only screen and (max-width: 31.25em) {
+          .prospect__stars label::before {
+            font-size: 2rem;
+            display: flex;
+            align-items: center; } }
   .prospect__location {
     font-size: 1.3rem;
     display: flex;
@@ -196,8 +208,8 @@ body {
       margin-bottom: 3rem; } }
   .review__text {
     margin-bottom: 2rem;
-    z-index: 10;
-    position: relative; }
+    position: relative;
+    z-index: 10; }
   .review__user {
     display: flex;
     align-items: center; }
@@ -350,11 +362,16 @@ body {
     margin-right: .7rem;
     height: 1.1rem;
     width: 1.1rem;
-    background-color: #EB2F64;
-    -webkit-mask-image: url(../img/chevron-thin-right.svg);
-    -webkit-mask-size: cover;
-    mask-image: url(../img/chevron-thin-right.svg);
-    mask-size: cover; }
+    background-image: url(../img/chevron-thin-right.svg);
+    background-size: cover; }
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+      .list__item::before {
+        background-image: none;
+        background-color: #EB2F64;
+        -webkit-mask-image: url(../img/chevron-thin-right.svg);
+        -webkit-mask-size: cover;
+        mask-image: url(../img/chevron-thin-right.svg);
+        mask-size: cover; } }
 
 .recommend {
   color: #777777;
