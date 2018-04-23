@@ -1,4 +1,4 @@
 # Ravioli
 Design for my portfolio using a flexbox.
 
-Used technologies: HTML, CSS, SASS and NPM.
+Technologies: HTML, CSS, SASS, JavaScript, BEM and NPM.

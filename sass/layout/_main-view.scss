@@ -1,4 +1,4 @@
-// Detail
+/* Detail */
 .detail {
     @include border-bottom;
     padding: 4.5rem;
@@ -16,7 +16,7 @@
     }
 }
 
-// Description
+/* Description */
 .description {
     @include second-shadow;
     margin-right: 4.5rem;
@@ -37,7 +37,7 @@
     }
 }
 
-// List
+/* List */
 .list {
     @include border-top;
     @include border-bottom;
@@ -74,8 +74,8 @@
         }
     }
 }
-
-// Recommend
+ 
+/* Recommend */
 .recommend {
     color: $color-grey-dark;
 

@@ -6,9 +6,13 @@
 
         <title>Ravioli</title>
         
+        <!-- Styles -->
         <link rel="stylesheet" href="css/style.css">
+
+        <!-- Icons -->
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
+        <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
     </head>
     <body>
@@ -255,28 +259,28 @@
                             </p>
 
                             <ul class="list">
-                                <li class="list__item">
+                                <li title="EUR 3,99" class="list__item">
                                     Cannelloni
                                 </li>
-                                <li class="list__item">
+                                <li title="EUR 1,99" class="list__item">
                                     Focaccia
                                 </li>
-                                <li class="list__item">
+                                <li title="EUR 2,99" class="list__item">
                                     Gnocchi
                                 </li>
-                                <li class="list__item">
+                                <li title="EUR 5,99" class="list__item">
                                     Granita
                                 </li>
-                                <li class="list__item">
+                                <li title="EUR 6,99" class="list__item">
                                     Panna cotta
                                 </li>
-                                <li class="list__item">
+                                <li title="EUR 9,99" class="list__item">
                                     Polenta
                                 </li>
-                                <li class="list__item">
+                                <li title="EUR 8,99" class="list__item">
                                     Spaghetti 
                                 </li>
-                                <li class="list__item">
+                                <li title="EUR 7,99" class="list__item">
                                     Zabaglione
                                 </li>
                             </ul>
@@ -284,7 +288,7 @@
                             <!-- Recommend -->
                             <div class="recommend">
                                 <p class="reccomend__count">
-                                    <strong title="Each of them wants to come back here">
+                                    <strong>
                                         Devotees of this restaurant.
                                     </strong>
                                 </p>
@@ -367,7 +371,7 @@
 
                     <!-- Action -->
                     <div class="action">
-                        <h2 class="action__subscribe">
+                        <h2 title="Limited time offer" class="action__subscribe">
                             Good news! Just subscribe to get a 10% discount
                         </h2>
                         <button class="btn">
@@ -385,6 +389,12 @@
 
         </div>
 
-        <script src="js/script.js"></script>
+        <!-- A script with a tooltip -->
+        <script src="js/scripts.js"></script>
+
+        <!-- Tooltip that downloads all titles -->
+        <script>
+            t00ltip(document.querySelectorAll("[title]"));
+        </script>
     </body>
 </html>

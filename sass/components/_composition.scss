@@ -1,4 +1,4 @@
-// Gallery
+/* Gallery */
 .gallery {
     display: flex;
 
@@ -15,7 +15,7 @@
     }
 }
 
-// The perspective of components
+/* The perspective of components */
 .prospect {
     @include border-bottom;
 
@@ -144,7 +144,7 @@
     }
 }
 
-// User-reviews
+/* User-reviews */
 .user-reviews {
     flex: 1;
     display: flex;
@@ -218,7 +218,7 @@
     }
 }
 
-// Action
+/* Action */
 .action {
     padding: 3.5rem 0;
     text-align: center;

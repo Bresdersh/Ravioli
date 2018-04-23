@@ -1,4 +1,11 @@
 @charset "UTF-8";
+/* Import */
+/* Box-shadow */
+/* Border-top */
+/* Border-bottom */
+/* Colors */
+/* Media Queries */
+/* Pulsate */
 @keyframes pulsate {
   0% {
     box-shadow: none;
@@ -10,6 +17,7 @@
     box-shadow: none;
     transform: scale(1); } }
 
+/* Base */
 * {
   margin: 0;
   padding: 0; }
@@ -34,11 +42,17 @@ body {
   background-color: #2ECC71;
   color: #777777; }
 
+/* Paragraph */
 .paragraph {
   text-align: justify; }
   .paragraph:not(:last-of-type) {
     margin-bottom: 2rem; }
 
+h4 {
+  margin-top: 18rem;
+  font-size: 1rem; }
+
+/* Btn-order */
 .btn-order {
   cursor: pointer;
   display: inline-block;
@@ -59,6 +73,7 @@ body {
     outline: none;
     animation: pulsate 1s infinite; }
 
+/* Button visible and invisible */
 .btn {
   cursor: pointer;
   font-size: 1.5rem;
@@ -92,6 +107,7 @@ body {
     outline: none;
     animation: pulsate 1s infinite; }
 
+/* Gallery */
 .gallery {
   display: flex; }
   .gallery__item:hover {
@@ -100,6 +116,7 @@ body {
     display: block;
     width: 100%; }
 
+/* The perspective of components */
 .prospect {
   border-bottom: 0.1rem solid #D3D3D3;
   display: flex;
@@ -121,7 +138,7 @@ body {
     margin-right: auto;
     padding: 1rem;
     height: 3rem;
-    width: 12rem;
+    width: 16rem;
     border-radius: 1.5rem;
     display: flex;
     justify-content: center;
@@ -193,6 +210,7 @@ body {
       .prospect__rating-count {
         font-size: .5rem; } }
 
+/* User-reviews */
 .user-reviews {
   flex: 1;
   display: flex;
@@ -247,6 +265,7 @@ body {
     color: #F4F2F2;
     z-index: 1; }
 
+/* Action */
 .action {
   padding: 3.5rem 0;
   text-align: center; }
@@ -259,6 +278,39 @@ body {
     font-weight: 600;
     text-transform: uppercase; }
 
+/* Tooltip */
+.tooltip {
+  padding: 1rem 1.5rem 1.2rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: #794044;
+  color: #FFFFFF;
+  opacity: 1;
+  -webkit-transition: visibility .6s opacity .6s;
+  transition: visibility .6s opacity .6s;
+  position: absolute;
+  z-index: 9999; }
+  .tooltip:after {
+    content: "";
+    display: block;
+    margin-left: -3rem;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 1rem .3rem 0 .3rem;
+    border-color: rgba(121, 64, 68, 0.4) transparent transparent transparent;
+    position: absolute;
+    left: 50%;
+    bottom: -1rem; }
+
+/* Tooltip hidden */
+.tooltip.hidden {
+  opacity: 0;
+  visibility: hidden; }
+
+/* Header */
 .page-header {
   border-bottom: 0.1rem solid #D3D3D3;
   height: 7rem;
@@ -273,11 +325,13 @@ body {
       flex-wrap: wrap;
       align-content: space-around; } }
 
+/* Logo */
 .logo {
   margin-left: 2rem;
   height: 5rem;
   width: 5.5rem; }
 
+/* Search */
 .search {
   flex: 0 0 40%;
   display: flex;
@@ -320,6 +374,7 @@ body {
     width: 2rem;
     fill: #333333; }
 
+/* Detail */
 .detail {
   border-bottom: 0.1rem solid #D3D3D3;
   padding: 4.5rem;
@@ -333,6 +388,7 @@ body {
     .detail {
       flex-direction: column; } }
 
+/* Description */
 .description {
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   margin-right: 4.5rem;
@@ -349,6 +405,7 @@ body {
       margin-right: 0;
       margin-bottom: 3rem; } }
 
+/* List */
 .list {
   border-top: 0.1rem solid #D3D3D3;
   border-bottom: 0.1rem solid #D3D3D3;
@@ -377,6 +434,7 @@ body {
         mask-image: url(../img/chevron-thin-right.svg);
         mask-size: cover; } }
 
+/* Recommend */
 .recommend {
   color: #777777;
   display: flex;
@@ -395,6 +453,7 @@ body {
     .recommend__photo:not(:last-child) {
       margin-right: -2rem; }
 
+/* User-navigation */
 .user-nav {
   display: flex;
   align-items: center;
@@ -431,6 +490,7 @@ body {
     height: 3.75rem;
     border-radius: 50%; }
 
+/* Sidebar-navigation */
 .sidebar {
   display: flex; }
   @media only screen and (max-width: 56.25em) {
@@ -444,6 +504,7 @@ body {
   flex-direction: column;
   justify-content: space-between; }
 
+/* Menu-navigation */
 .menu-nav {
   margin-top: 3.5rem;
   font-size: 1.4rem;
@@ -510,6 +571,7 @@ body {
         height: 1.5rem;
         width: 1.5rem; } }
 
+/* Copyright */
 .copyright {
   padding: 2.5rem;
   font-size: 1.2rem;
@@ -519,6 +581,7 @@ body {
     .copyright {
       display: none; } }
 
+/* Container */
 .container {
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   margin: 8rem auto;
@@ -531,6 +594,7 @@ body {
       max-width: 100%;
       width: 100%; } }
 
+/* Main-view */
 .main-view {
   flex: 1;
   background-color: #FFFFFF; }

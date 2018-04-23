@@ -1,4 +1,4 @@
-// Container 
+/* Container */
 .container {
     @include shadow;
     margin: 8rem auto;
@@ -13,7 +13,7 @@
     }
 }
 
-// Main-view
+/* Main-view */
 .main-view {
     flex: 1;
 

@@ -1,4 +1,4 @@
-// Header
+/* Header */
 .page-header {
     @include border-bottom;
     height: 7rem;
@@ -17,14 +17,14 @@
     }
 }
 
-// Logo
+/* Logo */
 .logo {
     margin-left: 2rem;
     height: 5rem;
     width: 5.5rem;
 }
 
-// Search
+/* Search */
 .search {
     flex: 0 0 40%;
     display: flex;

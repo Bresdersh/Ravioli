@@ -1,4 +1,4 @@
-// Box-shadow
+/* Box-shadow */
 @mixin shadow {
     box-shadow: 0 2rem 6rem rgba(0, 0, 0, .3);
 }
@@ -7,12 +7,12 @@
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, .06);
 }
 
-// Border-top
+/* Border-top */
 @mixin border-top {
     border-top: .1rem solid $color-grey-light-1;
 }
 
-// Border-bottom
+/* Border-bottom */
 @mixin border-bottom {
     border-bottom: .1rem solid $color-grey-light-1;
 }
